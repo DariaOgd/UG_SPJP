@@ -25,3 +25,21 @@ int main()
 
     return 0;
 }
+
+
+void zad5 (int a)
+{
+  if (a == 1 ||a == 0){
+    printf ("%d",a);
+    return ;
+    
+  }
+  zad5 (a/2);
+  printf("%d", a%2);
+}
+
+int main()
+{
+    zad5(7);
+    return 0;
+}
